@@ -94,7 +94,7 @@ GameManager.prototype.addRandomTile = function () {
     var p = 0.003;
     if(this.maxTile >= 1024) p = 0.001;
     else if(this.maxTile >= 256) p = 0.002;
-    var value = coin < 0.9 ? 2 : 4;
+    var value = coin < 0.9 ? 4 : 8;
     if(this.karma == 0 && this.relTime == null && numCellsAvailable > 1 && numCellsAvailable < 10 && coin >= 0.9-9*p && coin < 0.9+p){
       value = 1;
       this.relTime = new Date().getTime();
